@@ -1,0 +1,71 @@
+/* =====================================================
+   projects.css — Project Cards
+   Edit this file to change: card layout, banner colors
+===================================================== */
+
+/* 3-column grid */
+.projects-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+
+/* Card */
+.proj-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+  display: flex; flex-direction: column; transition: all 0.3s var(--ease);
+}
+.proj-card:hover { border-color: rgba(124,92,252,0.5); transform: translateY(-8px); box-shadow: 0 24px 56px rgba(0,0,0,0.6); }
+
+/* Banner area */
+.proj-banner { height: 185px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.proj-banner svg { position: absolute; inset: 0; }
+
+/* ← Change these gradient backgrounds to customise each project banner */
+.banner-1 { background: linear-gradient(135deg, #1a0f3c, #2d1b69, #0f172a); }
+.banner-2 { background: linear-gradient(135deg, #0c1f3c, #1a3a5c, #082030); }
+.banner-3 { background: linear-gradient(135deg, #1c0a0a, #3b1515, #0d0d20); }
+
+/* Badge on banner */
+.proj-badge {
+  position: absolute; top: 12px; left: 12px; z-index: 2;
+  display: flex; align-items: center; gap: 6px;
+  background: rgba(0,0,0,0.55); backdrop-filter: blur(6px);
+  border: 1px solid var(--border2);
+  padding: 5px 12px; border-radius: 6px;
+  font-size: 0.72rem; font-weight: 600; color: var(--text2);
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.badge-dot { width: 6px; height: 6px; border-radius: 50%; }
+
+/* Card body */
+.proj-body { padding: 22px; flex: 1; display: flex; flex-direction: column; }
+.proj-name { font-family: var(--font-display); font-size: 0.97rem; font-weight: 700; margin-bottom: 10px; }
+.proj-desc { font-size: 0.85rem; color: var(--text2); line-height: 1.7; margin-bottom: 16px; flex: 1; }
+
+/* Key features */
+.kf-label { display: flex; align-items: center; gap: 6px; font-size: 0.75rem; font-weight: 700; color: var(--accent3); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px; }
+.kf-list  { list-style: none; margin-bottom: 16px; }
+.kf-list li { position: relative; padding-left: 15px; font-size: 0.835rem; color: var(--text2); line-height: 1.65; margin-bottom: 6px; }
+.kf-list li::before { content: '›'; position: absolute; left: 0; top: 0; color: var(--accent); font-size: 1rem; line-height: 1.35; }
+
+/* Tags */
+.proj-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.ptag {
+  background: var(--card2); border: 1px solid var(--border);
+  padding: 4px 10px; border-radius: 6px;
+  font-size: 0.74rem; font-weight: 500; color: var(--text2);
+  transition: border-color 0.2s;
+}
+.proj-card:hover .ptag { border-color: rgba(124,92,252,0.25); }
+
+/* Links */
+.proj-links { display: flex; gap: 10px; flex-wrap: wrap; }
+.proj-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 13px; border-radius: 7px;
+  background: var(--card2); border: 1px solid var(--border);
+  color: var(--text2); font-size: 0.78rem; font-weight: 500; transition: all 0.2s;
+}
+.proj-link:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Responsive */
+@media (max-width: 1024px) { .projects-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 900px)  { .projects-grid { grid-template-columns: 1fr; } }
