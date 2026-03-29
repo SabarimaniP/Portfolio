@@ -150,4 +150,64 @@ function initProjectBanners() {
       </svg>
     `);
   }
+
+ /* ─────────────────────────────────────────────
+   BANNER 4 — FamPay RCA
+───────────────────────────────────────────── */
+const pb4 = document.getElementById('pb4');
+if (pb4) {
+  pb4.insertAdjacentHTML('afterbegin', `
+    <svg width="100%" height="100%" viewBox="0 0 380 185"
+         xmlns="http://www.w3.org/2000/svg"
+         style="position:absolute;inset:0">
+      <defs>
+        <filter id="glow4">
+          <feGaussianBlur stdDeviation="3" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <!-- Central insight node -->
+      <circle cx="190" cy="86" r="44" fill="rgba(250,204,21,0.09)" stroke="rgba(250,204,21,0.38)" stroke-width="1.5"/>
+      <text x="190" y="78" font-size="9" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Core Insight</text>
+      <text x="190" y="93" font-size="11" text-anchor="middle" fill="#facc15" font-family="DM Sans" font-weight="700">Payments ≠</text>
+      <text x="190" y="108" font-size="11" text-anchor="middle" fill="#facc15" font-family="DM Sans" font-weight="700">Daily Habit</text>
+
+      <!-- Left node — Problem -->
+      <circle cx="72" cy="74" r="30" fill="rgba(249,115,22,0.08)" stroke="rgba(249,115,22,0.35)" stroke-width="1"/>
+      <text x="72" y="70" font-size="20" text-anchor="middle">📉</text>
+      <text x="72" y="91" font-size="9.5" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Drop</text>
+
+      <!-- Right node — Solution -->
+      <circle cx="308" cy="74" r="30" fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.35)" stroke-width="1"/>
+      <text x="308" y="70" font-size="20" text-anchor="middle">✦</text>
+      <text x="308" y="91" font-size="9.5" text-anchor="middle" fill="#8892a4" font-family="DM Sans">FamWish</text>
+
+      <!-- Arrow left to center -->
+      <path d="M102 78 L144 84" stroke="rgba(249,115,22,0.55)" stroke-width="1.5" stroke-dasharray="4,3" fill="none" filter="url(#glow4)"/>
+
+      <!-- Arrow center to right -->
+      <path d="M236 84 L278 78" stroke="rgba(74,222,128,0.55)" stroke-width="1.5" stroke-dasharray="4,3" fill="none" filter="url(#glow4)"/>
+
+      <!-- Root cause pills - bottom left -->
+      <rect x="14" y="115" width="110" height="18" rx="4" fill="rgba(91,138,245,0.08)" stroke="rgba(91,138,245,0.28)" stroke-width="1"/>
+      <text x="20" y="128" font-size="8.5" fill="#5b8af5" font-family="DM Sans">⚡ No Daily Triggers</text>
+
+      <rect x="14" y="138" width="110" height="18" rx="4" fill="rgba(192,132,252,0.08)" stroke="rgba(192,132,252,0.28)" stroke-width="1"/>
+      <text x="20" y="151" font-size="8.5" fill="#c084fc" font-family="DM Sans">🔄 No Habit Loop</text>
+
+      <rect x="14" y="161" width="110" height="18" rx="4" fill="rgba(249,115,22,0.08)" stroke="rgba(249,115,22,0.28)" stroke-width="1"/>
+      <text x="20" y="174" font-size="8.5" fill="#f97316" font-family="DM Sans">📈 No Progression</text>
+
+      <!-- Metrics badge - bottom right -->
+      <rect x="248" y="128" width="118" height="24" rx="12" fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.3)" stroke-width="1"/>
+      <text x="307" y="144" font-size="10.5" text-anchor="middle" fill="#4ade80" font-family="DM Sans">↑ DAU &amp; D30</text>
+
+      <!-- Top badge -->
+      <rect x="138" y="16" width="104" height="22" rx="11" fill="rgba(249,115,22,0.08)" stroke="rgba(249,115,22,0.3)" stroke-width="1"/>
+      <text x="190" y="31" font-size="9.5" text-anchor="middle" fill="#f97316" font-family="DM Sans">🔍 RCA Study</text>
+    </svg>
+  `);
 }
+}
+
