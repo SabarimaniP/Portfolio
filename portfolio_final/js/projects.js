@@ -208,6 +208,92 @@ if (pb4) {
       <text x="190" y="31" font-size="9.5" text-anchor="middle" fill="#f97316" font-family="DM Sans">🔍 RCA Study</text>
     </svg>
   `);
+
+  /* ─────────────────────────────────────────────
+   BANNER 5 — AI Call Analyzer (n8n)
+───────────────────────────────────────────── */
+const pb5 = document.getElementById('pb5');
+if (pb5) {
+  pb5.insertAdjacentHTML('afterbegin', `
+    <svg width="100%" height="100%" viewBox="0 0 380 185"
+         xmlns="http://www.w3.org/2000/svg"
+         style="position:absolute;inset:0">
+      <defs>
+        <filter id="glow5">
+          <feGaussianBlur stdDeviation="3" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <!-- Pipeline track -->
+      <line x1="44" y1="92" x2="336" y2="92"
+            stroke="rgba(74,222,128,0.18)" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+      <!-- Node 1: Audio -->
+      <circle cx="44" cy="92" r="26" fill="rgba(74,222,128,0.08)"
+              stroke="rgba(74,222,128,0.4)" stroke-width="1.5" filter="url(#glow5)"/>
+      <text x="44" y="88" font-size="16" text-anchor="middle">🎙</text>
+      <text x="44" y="127" font-size="8.5" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Audio</text>
+
+      <!-- Arrow -->
+      <path d="M72 92 L96 92" stroke="rgba(74,222,128,0.5)" stroke-width="1.5"
+            marker-end="url(#arr5)" fill="none"/>
+      <defs>
+        <marker id="arr5" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+          <path d="M0,0 L6,3 L0,6 Z" fill="rgba(74,222,128,0.6)"/>
+        </marker>
+      </defs>
+
+      <!-- Node 2: Whisper Transcribe -->
+      <circle cx="130" cy="92" r="26" fill="rgba(91,138,245,0.08)"
+              stroke="rgba(91,138,245,0.4)" stroke-width="1.5"/>
+      <text x="130" y="88" font-size="16" text-anchor="middle">📝</text>
+      <text x="130" y="127" font-size="8.5" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Whisper</text>
+
+      <!-- Arrow -->
+      <path d="M158 92 L182 92" stroke="rgba(91,138,245,0.5)" stroke-width="1.5" fill="none"/>
+
+      <!-- Node 3: GPT-4o-mini (center, larger) -->
+      <circle cx="216" cy="92" r="32" fill="rgba(192,132,252,0.09)"
+              stroke="rgba(192,132,252,0.45)" stroke-width="1.5" filter="url(#glow5)"/>
+      <text x="216" y="86" font-size="9" text-anchor="middle" fill="#c084fc" font-family="DM Sans" font-weight="700">GPT-4o</text>
+      <text x="216" y="100" font-size="9" text-anchor="middle" fill="#c084fc" font-family="DM Sans" font-weight="700">mini ×3</text>
+      <text x="216" y="134" font-size="8.5" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Parallel AI</text>
+
+      <!-- Arrow -->
+      <path d="M250 92 L272 92" stroke="rgba(192,132,252,0.5)" stroke-width="1.5" fill="none"/>
+
+      <!-- Node 4: Scores -->
+      <circle cx="306" cy="92" r="26" fill="rgba(250,204,21,0.08)"
+              stroke="rgba(250,204,21,0.4)" stroke-width="1.5"/>
+      <text x="306" y="88" font-size="16" text-anchor="middle">📊</text>
+      <text x="306" y="127" font-size="8.5" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Report</text>
+
+      <!-- Score pills -->
+      <rect x="248" y="14" width="88" height="18" rx="4"
+            fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.28)" stroke-width="1"/>
+      <text x="292" y="27" font-size="8" text-anchor="middle" fill="#4ade80" font-family="DM Sans">Quality /10</text>
+
+      <rect x="248" y="37" width="88" height="18" rx="4"
+            fill="rgba(91,138,245,0.08)" stroke="rgba(91,138,245,0.28)" stroke-width="1"/>
+      <text x="292" y="50" font-size="8" text-anchor="middle" fill="#5b8af5" font-family="DM Sans">Script /8</text>
+
+      <rect x="248" y="60" width="88" height="18" rx="4"
+            fill="rgba(192,132,252,0.08)" stroke="rgba(192,132,252,0.28)" stroke-width="1"/>
+      <text x="292" y="73" font-size="8" text-anchor="middle" fill="#c084fc" font-family="DM Sans">Talk Time</text>
+
+      <!-- n8n badge bottom left -->
+      <rect x="14" y="148" width="72" height="22" rx="11"
+            fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.3)" stroke-width="1"/>
+      <text x="50" y="163" font-size="9.5" text-anchor="middle" fill="#4ade80" font-family="DM Sans">⚡ n8n</text>
+
+      <!-- Hindi label -->
+      <rect x="98" y="148" width="84" height="22" rx="11"
+            fill="rgba(91,138,245,0.08)" stroke="rgba(91,138,245,0.28)" stroke-width="1"/>
+      <text x="140" y="163" font-size="9" text-anchor="middle" fill="#5b8af5" font-family="DM Sans">🇮🇳 Hindi Calls</text>
+    </svg>
+  `);
+}
 }
 }
 
