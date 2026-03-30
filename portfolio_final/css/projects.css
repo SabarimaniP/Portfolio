@@ -24,6 +24,7 @@
 .banner-3 { background: linear-gradient(135deg, #1c0a0a, #3b1515, #0d0d20); }
 .banner-4 { background: linear-gradient(135deg, #0f1a2e, #1a2744, #0d1520); }
 .banner-5 { background: linear-gradient(135deg, #061a12, #0a2e1a, #060f1a); }
+.banner-6 { background: linear-gradient(135deg, #1a0a2e, #2e1060, #0f0a1e); }
 
 /* Badge on banner */
 .proj-badge {

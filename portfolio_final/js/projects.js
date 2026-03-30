@@ -294,6 +294,78 @@ if (pb5) {
     </svg>
   `);
 }
+
+/* ─────────────────────────────────────────────
+   BANNER 6 — FamPay Product Teardown
+───────────────────────────────────────────── */
+const pb6 = document.getElementById('pb6');
+if (pb6) {
+  pb6.insertAdjacentHTML('afterbegin', `
+    <svg width="100%" height="100%" viewBox="0 0 380 185"
+         xmlns="http://www.w3.org/2000/svg"
+         style="position:absolute;inset:0">
+      <defs>
+        <filter id="glow6">
+          <feGaussianBlur stdDeviation="3" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <!-- Central FamPay core node -->
+      <circle cx="190" cy="86" r="44" fill="rgba(192,132,252,0.10)" stroke="rgba(192,132,252,0.40)" stroke-width="1.5" filter="url(#glow6)"/>
+      <text x="190" y="80" font-size="9" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Product</text>
+      <text x="190" y="94" font-size="12" text-anchor="middle" fill="#c084fc" font-family="DM Sans" font-weight="700">FamPay</text>
+      <text x="190" y="108" font-size="9" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Teardown</text>
+
+      <!-- Left node — Teen -->
+      <circle cx="72" cy="72" r="28" fill="rgba(91,138,245,0.08)" stroke="rgba(91,138,245,0.35)" stroke-width="1"/>
+      <text x="72" y="68" font-size="18" text-anchor="middle">👦</text>
+      <text x="72" y="88" font-size="9" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Teen</text>
+
+      <!-- Right node — Parent -->
+      <circle cx="308" cy="72" r="28" fill="rgba(192,132,252,0.08)" stroke="rgba(192,132,252,0.35)" stroke-width="1"/>
+      <text x="308" y="68" font-size="18" text-anchor="middle">👩</text>
+      <text x="308" y="88" font-size="9" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Parent</text>
+
+      <!-- Arrows -->
+      <path d="M100 76 L144 84" stroke="rgba(91,138,245,0.55)" stroke-width="1.5" stroke-dasharray="4,3" fill="none" filter="url(#glow6)"/>
+      <path d="M236 84 L280 76" stroke="rgba(192,132,252,0.55)" stroke-width="1.5" stroke-dasharray="4,3" fill="none" filter="url(#glow6)"/>
+
+      <!-- 4 layer pills - bottom left stack -->
+      <rect x="14" y="112" width="105" height="16" rx="4" fill="rgba(91,138,245,0.08)" stroke="rgba(91,138,245,0.28)" stroke-width="1"/>
+      <text x="20" y="124" font-size="8" fill="#5b8af5" font-family="DM Sans">💳 Access Layer</text>
+
+      <rect x="14" y="132" width="105" height="16" rx="4" fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.28)" stroke-width="1"/>
+      <text x="20" y="144" font-size="8" fill="#4ade80" font-family="DM Sans">🔒 Permission Layer</text>
+
+      <rect x="14" y="152" width="105" height="16" rx="4" fill="rgba(250,204,21,0.08)" stroke="rgba(250,204,21,0.28)" stroke-width="1"/>
+      <text x="20" y="164" font-size="8" fill="#facc15" font-family="DM Sans">💰 Money Layer</text>
+
+      <rect x="14" y="172" width="105" height="16" rx="4" fill="rgba(192,132,252,0.08)" stroke="rgba(192,132,252,0.28)" stroke-width="1"/>
+      <text x="20" y="184" font-size="8" fill="#c084fc" font-family="DM Sans">🔁 Habit Layer</text>
+
+      <!-- Right side stats -->
+      <!-- 15M badge -->
+      <rect x="248" y="110" width="118" height="36" rx="8" fill="rgba(192,132,252,0.07)" stroke="rgba(192,132,252,0.28)" stroke-width="1"/>
+      <text x="307" y="126" font-size="16" text-anchor="middle" fill="#c084fc" font-family="DM Sans" font-weight="900">15M+</text>
+      <text x="307" y="140" font-size="8" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Users (2025)</text>
+
+      <!-- 60% badge -->
+      <rect x="248" y="152" width="56" height="30" rx="6" fill="rgba(250,204,21,0.07)" stroke="rgba(250,204,21,0.28)" stroke-width="1"/>
+      <text x="276" y="167" font-size="13" text-anchor="middle" fill="#facc15" font-family="DM Sans" font-weight="900">60%</text>
+      <text x="276" y="178" font-size="7" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Teen Share</text>
+
+      <!-- Pivot badge -->
+      <rect x="310" y="152" width="56" height="30" rx="6" fill="rgba(249,115,22,0.07)" stroke="rgba(249,115,22,0.28)" stroke-width="1"/>
+      <text x="338" y="165" font-size="8" text-anchor="middle" fill="#f97316" font-family="DM Sans" font-weight="700">2023</text>
+      <text x="338" y="178" font-size="7" text-anchor="middle" fill="#8892a4" font-family="DM Sans">Pivot</text>
+
+      <!-- Top badge -->
+      <rect x="138" y="16" width="104" height="22" rx="11" fill="rgba(192,132,252,0.08)" stroke="rgba(192,132,252,0.3)" stroke-width="1"/>
+      <text x="190" y="31" font-size="9.5" text-anchor="middle" fill="#c084fc" font-family="DM Sans">🔍 Strategy Deep-Dive</text>
+    </svg>
+  `);
+}
 }
 }
 
