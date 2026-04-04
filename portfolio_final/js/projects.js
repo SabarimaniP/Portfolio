@@ -366,6 +366,111 @@ if (pb6) {
     </svg>
   `);
 }
+
+/* ─────────────────────────────────────────────
+     BANNER 7 — FamWrapped
+  ───────────────────────────────────────────── */
+  const pb7 = document.getElementById('pb7');
+  if (pb7) {
+    pb7.insertAdjacentHTML('afterbegin', `
+      <svg width="100%" height="100%" viewBox="0 0 380 185"
+           xmlns="http://www.w3.org/2000/svg"
+           style="position:absolute;inset:0">
+        <defs>
+          <filter id="glow7">
+            <feGaussianBlur stdDeviation="3" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- Instagram-style story progress bar (5 segments) -->
+        <rect x="20"  y="16" width="60" height="4" rx="2" fill="rgba(250,204,21,0.9)"/>
+        <rect x="86"  y="16" width="60" height="4" rx="2" fill="rgba(250,204,21,0.9)"/>
+        <rect x="152" y="16" width="60" height="4" rx="2" fill="rgba(250,204,21,0.22)"/>
+        <rect x="152" y="16" width="28" height="4" rx="2" fill="rgba(250,204,21,0.9)"/>
+        <rect x="218" y="16" width="60" height="4" rx="2" fill="rgba(250,204,21,0.22)"/>
+        <rect x="284" y="16" width="76" height="4" rx="2" fill="rgba(250,204,21,0.22)"/>
+
+        <!-- Central slide card -->
+        <rect x="122" y="30" width="136" height="138" rx="10"
+              fill="rgba(18,16,0,0.88)" stroke="rgba(250,204,21,0.38)"
+              stroke-width="1.2" filter="url(#glow7)"/>
+
+        <!-- YOUR APRIL chip -->
+        <rect x="143" y="40" width="94" height="14" rx="4"
+              fill="rgba(250,204,21,0.10)" stroke="rgba(250,204,21,0.32)" stroke-width="0.8"/>
+        <text x="190" y="51" font-size="7.5" text-anchor="middle"
+              fill="#facc15" font-family="DM Sans" letter-spacing="1.2">YOUR APRIL</text>
+
+        <!-- Hero headline -->
+        <text x="190" y="72" font-size="10.5" text-anchor="middle"
+              fill="#f0f0f0" font-family="Syne" font-weight="800">You showed up.</text>
+        <text x="190" y="86" font-size="10.5" text-anchor="middle"
+              fill="#f0f0f0" font-family="Syne" font-weight="800">Every. Single. Day. 🔥</text>
+
+        <!-- Stats card inside slide -->
+        <rect x="130" y="98" width="120" height="42" rx="6"
+              fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="0.8"/>
+
+        <text x="152" y="114" font-size="13" text-anchor="middle"
+              fill="#facc15" font-family="Syne" font-weight="800">5</text>
+        <text x="152" y="131" font-size="7" text-anchor="middle"
+              fill="#8892a4" font-family="DM Sans">Tasks</text>
+
+        <line x1="174" y1="102" x2="174" y2="136" stroke="rgba(255,255,255,0.09)" stroke-width="0.8"/>
+
+        <text x="190" y="113" font-size="12" text-anchor="middle"
+              fill="#facc15" font-family="Syne" font-weight="800">₹240</text>
+        <text x="190" y="131" font-size="7" text-anchor="middle"
+              fill="#8892a4" font-family="DM Sans">Earned</text>
+
+        <line x1="206" y1="102" x2="206" y2="136" stroke="rgba(255,255,255,0.09)" stroke-width="0.8"/>
+
+        <text x="228" y="114" font-size="13" text-anchor="middle"
+              fill="#facc15" font-family="Syne" font-weight="800">30%</text>
+        <text x="228" y="131" font-size="7" text-anchor="middle"
+              fill="#8892a4" font-family="DM Sans">Wish</text>
+
+        <!-- Tap hint at slide bottom -->
+        <text x="190" y="158" font-size="8" text-anchor="middle"
+              fill="rgba(255,255,255,0.28)" font-family="DM Sans">Tap → to begin</text>
+
+        <!-- Left: Badge ring with trophy -->
+        <circle cx="68" cy="92" r="33" fill="rgba(250,204,21,0.05)"
+                stroke="rgba(250,204,21,0.42)" stroke-width="1.5" filter="url(#glow7)"/>
+        <line x1="68" y1="59" x2="68" y2="64"  stroke="rgba(250,204,21,0.55)" stroke-width="1.2"/>
+        <line x1="97" y1="68" x2="93" y2="72"  stroke="rgba(250,204,21,0.4)"  stroke-width="1"/>
+        <line x1="101" y1="92" x2="96" y2="92" stroke="rgba(250,204,21,0.55)" stroke-width="1.2"/>
+        <line x1="97" y1="116" x2="93" y2="112" stroke="rgba(250,204,21,0.4)" stroke-width="1"/>
+        <line x1="68" y1="125" x2="68" y2="120" stroke="rgba(250,204,21,0.55)" stroke-width="1.2"/>
+        <line x1="39" y1="116" x2="43" y2="112" stroke="rgba(250,204,21,0.4)" stroke-width="1"/>
+        <line x1="35" y1="92" x2="40" y2="92"  stroke="rgba(250,204,21,0.55)" stroke-width="1.2"/>
+        <line x1="39" y1="68" x2="43" y2="72"  stroke="rgba(250,204,21,0.4)"  stroke-width="1"/>
+        <text x="68" y="99" font-size="24" text-anchor="middle" dominant-baseline="middle">🏆</text>
+        <text x="68" y="164" font-size="8.5" text-anchor="middle"
+              fill="#8892a4" font-family="DM Sans">Achievement</text>
+
+        <!-- Right: Persona circle -->
+        <circle cx="312" cy="78" r="28" fill="rgba(91,138,245,0.07)"
+                stroke="rgba(91,138,245,0.35)" stroke-width="1"/>
+        <text x="312" y="74" font-size="18" text-anchor="middle">🦸</text>
+        <text x="312" y="95" font-size="8.5" text-anchor="middle"
+              fill="#8892a4" font-family="DM Sans">Persona</text>
+
+        <!-- Share pill -->
+        <rect x="284" y="118" width="60" height="20" rx="5"
+              fill="rgba(250,204,21,0.08)" stroke="rgba(250,204,21,0.32)" stroke-width="1"/>
+        <text x="314" y="131" font-size="8.5" text-anchor="middle"
+              fill="#facc15" font-family="DM Sans">↗ Share</text>
+
+        <!-- FamWish tag -->
+        <rect x="284" y="144" width="60" height="18" rx="5"
+              fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.09)" stroke-width="0.8"/>
+        <text x="314" y="156.5" font-size="8" text-anchor="middle"
+              fill="rgba(255,255,255,0.35)" font-family="DM Sans">⭐ FamWish</text>
+      </svg>
+    `);
+  }
 }
 }
 
